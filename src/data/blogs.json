@@ -1,0 +1,312 @@
+[
+  {
+    "title": "Harvard University",
+    "description": "Harvard continues to set global standards in education, innovation, and research.",
+    "coverImg": "https://upload.wikimedia.org/wikipedia/commons/2/29/Harvard_University_Widener_Library.jpg",
+    "rating": 5,
+    "category": "Education",
+    "author": {
+      "_id": "1001",
+      "email": "admin@harvard.edu"
+    },
+    "content": {
+      "time": 1712196223362,
+      "blocks": [
+        {
+          "id": "h1",
+          "type": "header",
+          "data": {
+            "text": "Legacy of Excellence",
+            "level": 2
+          }
+        },
+        {
+          "id": "p1",
+          "type": "paragraph",
+          "data": {
+            "text": "Harvard has shaped the future of many leaders around the world and is recognized for its rigorous academics and global impact."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "title": "Stanford University",
+    "description": "Silicon Valley's intellectual powerhouse with world-class faculty and cutting-edge research.",
+    "coverImg": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Stanford_University_campus_from_above.jpg",
+    "rating": 5,
+    "category": "Innovation",
+    "author": {
+      "_id": "1002",
+      "email": "admin@stanford.edu"
+    },
+    "content": {
+      "time": 1712196223362,
+      "blocks": [
+        {
+          "id": "h2",
+          "type": "header",
+          "data": {
+            "text": "Driving Innovation Worldwide",
+            "level": 2
+          }
+        },
+        {
+          "id": "p2",
+          "type": "paragraph",
+          "data": {
+            "text": "Stanford’s close ties with industry and its emphasis on entrepreneurial spirit make it a global leader in education and research."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "title": "Massachusetts Institute of Technology (MIT)",
+    "description": "MIT stands as a beacon for technological advancement and scientific discovery.",
+    "coverImg": "https://upload.wikimedia.org/wikipedia/commons/0/0c/MIT_Dome_night1.jpg",
+    "rating": 5,
+    "category": "Technology",
+    "author": {
+      "_id": "1003",
+      "email": "admin@mit.edu"
+    },
+    "content": {
+      "time": 1712196223362,
+      "blocks": [
+        {
+          "id": "h3",
+          "type": "header",
+          "data": {
+            "text": "Pioneering Technology and Science",
+            "level": 2
+          }
+        },
+        {
+          "id": "p3",
+          "type": "paragraph",
+          "data": {
+            "text": "MIT fosters innovation and practical problem-solving, consistently ranking among the top institutions in the world."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "title": "University of Oxford",
+    "description": "A timeless symbol of scholarly excellence with a history that spans centuries.",
+    "coverImg": "https://upload.wikimedia.org/wikipedia/commons/2/24/All_Souls_College%2C_Oxford.jpg",
+    "rating": 4,
+    "category": "Classical Studies",
+    "author": {
+      "_id": "1004",
+      "email": "admin@ox.ac.uk"
+    },
+    "content": {
+      "time": 1712196223362,
+      "blocks": [
+        {
+          "id": "h4",
+          "type": "header",
+          "data": {
+            "text": "The Oldest University in the English-Speaking World",
+            "level": 2
+          }
+        },
+        {
+          "id": "p4",
+          "type": "paragraph",
+          "data": {
+            "text": "Oxford offers a rich academic tradition that blends history with modern advancements in research and scholarship."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "title": "University of Cambridge",
+    "description": "A revered institution nurturing some of the greatest minds in history.",
+    "coverImg": "https://upload.wikimedia.org/wikipedia/commons/6/66/Cambridge_University_clare_college_courtyard.jpg",
+    "rating": 4,
+    "category": "Science",
+    "author": {
+      "_id": "1005",
+      "email": "admin@cam.ac.uk"
+    },
+    "content": {
+      "time": 1712196223362,
+      "blocks": [
+        {
+          "id": "h5",
+          "type": "header",
+          "data": {
+            "text": "Home of Intellectual Giants",
+            "level": 2
+          }
+        },
+        {
+          "id": "p5",
+          "type": "paragraph",
+          "data": {
+            "text": "From Newton to Hawking, Cambridge continues to push the boundaries of human knowledge."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "title": "California Institute of Technology (Caltech)",
+    "description": "A hub for deep scientific research and elite engineering programs.",
+    "coverImg": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Caltech_Athenaeum.jpg",
+    "rating": 5,
+    "category": "Engineering",
+    "author": {
+      "_id": "1006",
+      "email": "admin@caltech.edu"
+    },
+    "content": {
+      "time": 1712196223362,
+      "blocks": [
+        {
+          "id": "h6",
+          "type": "header",
+          "data": {
+            "text": "Elite Tech Research Center",
+            "level": 2
+          }
+        },
+        {
+          "id": "p6",
+          "type": "paragraph",
+          "data": {
+            "text": "Caltech is small but mighty, known for its contributions in physics, space, and computational sciences."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "title": "ETH Zurich",
+    "description": "Switzerland’s top-ranked university, known for excellence in engineering and natural sciences.",
+    "coverImg": "https://upload.wikimedia.org/wikipedia/commons/2/2f/ETH_Zurich_main_building.jpg",
+    "rating": 4,
+    "category": "STEM",
+    "author": {
+      "_id": "1007",
+      "email": "admin@ethz.ch"
+    },
+    "content": {
+      "time": 1712196223362,
+      "blocks": [
+        {
+          "id": "h7",
+          "type": "header",
+          "data": {
+            "text": "Global STEM Excellence",
+            "level": 2
+          }
+        },
+        {
+          "id": "p7",
+          "type": "paragraph",
+          "data": {
+            "text": "ETH Zurich has produced Nobel laureates and tech innovators, particularly in the fields of physics and mathematics."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "title": "University of Chicago",
+    "description": "Renowned for economics, law, and interdisciplinary thinking.",
+    "coverImg": "https://upload.wikimedia.org/wikipedia/commons/0/0e/University_of_Chicago_Main_Quad.jpg",
+    "rating": 4,
+    "category": "Social Sciences",
+    "author": {
+      "_id": "1008",
+      "email": "admin@uchicago.edu"
+    },
+    "content": {
+      "time": 1712196223362,
+      "blocks": [
+        {
+          "id": "h8",
+          "type": "header",
+          "data": {
+            "text": "Critical Inquiry and Ideas",
+            "level": 2
+          }
+        },
+        {
+          "id": "p8",
+          "type": "paragraph",
+          "data": {
+            "text": "The university emphasizes a strong core curriculum and bold intellectual discussion."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "title": "University of Tokyo",
+    "description": "Japan’s leading academic institution blending tradition and tech.",
+    "coverImg": "https://upload.wikimedia.org/wikipedia/commons/8/84/Yasuda_Auditorium_University_of_Tokyo.jpg",
+    "rating": 3,
+    "category": "Research",
+    "author": {
+      "_id": "1009",
+      "email": "admin@u-tokyo.ac.jp"
+    },
+    "content": {
+      "time": 1712196223362,
+      "blocks": [
+        {
+          "id": "h9",
+          "type": "header",
+          "data": {
+            "text": "Innovation Rooted in Tradition",
+            "level": 2
+          }
+        },
+        {
+          "id": "p9",
+          "type": "paragraph",
+          "data": {
+            "text": "It plays a central role in shaping Japan’s technological and social advancement."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "title": "National University of Singapore (NUS)",
+    "description": "Asia’s powerhouse in innovation, education, and research.",
+    "coverImg": "https://upload.wikimedia.org/wikipedia/commons/f/f9/National_University_of_Singapore_20090114.jpg",
+    "rating": 3,
+    "category": "Global Education",
+    "author": {
+      "_id": "1010",
+      "email": "admin@nus.edu.sg"
+    },
+    "content": {
+      "time": 1712196223362,
+      "blocks": [
+        {
+          "id": "h10",
+          "type": "header",
+          "data": {
+            "text": "Leading Asia’s Future",
+            "level": 2
+          }
+        },
+        {
+          "id": "p10",
+          "type": "paragraph",
+          "data": {
+            "text": "NUS blends global perspectives with Asian insights to create a unique educational environment."
+          }
+        }
+      ]
+    }
+  }
+]
