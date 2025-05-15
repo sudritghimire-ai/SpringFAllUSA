@@ -5,7 +5,7 @@ const JWT_SECRET = process.env.JWT_SECRET_KEY;
 const verifyToken = (req, res, next) => {
   try {
     // Check token from cookies or Authorization header
-const token = req.headers['authorization']?.split(' ')[1];
+    const token = req.cookies.token || req.headers['authorization']?.split(' ')[1];
 
     if (!token) {
       return res.status(401).send({

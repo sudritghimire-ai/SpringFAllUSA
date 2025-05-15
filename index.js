@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
 // CORS setup to allow both local and deployed frontend
 app.use(
   cors({
-    origin: ['http://localhost:5173', 'https://springfallusa.vercel.app'],
+    origin: ['http://localhost:5173','https://springfallusa-76wx.onrender.com/'],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization'],
   })
