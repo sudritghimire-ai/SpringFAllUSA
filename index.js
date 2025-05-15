@@ -17,10 +17,10 @@ app.use(cookieParser());
 app.use(bodyParser.json({ limit: '10mb' }));
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
 
-// CORS setup to allow both local and deployed frontend
+// CORS setup to allow both local and deployed frontend ONLY
 app.use(
   cors({
-    origin: ['http://localhost:5173','https://springfallusa-76wx.onrender.com'],
+    origin: ['http://localhost:5173', 'https://springfall-usa.vercel.app'],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization'],
   })
