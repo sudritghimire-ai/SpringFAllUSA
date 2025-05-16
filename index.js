@@ -11,20 +11,31 @@ const port = process.env.PORT || 5000;
 // Logs the MongoDB URL (for debugging)
 console.log('MongoDB URL:', process.env.MONGODB_URL);
 
-// CORS options
+// List of allowed origins for CORS
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://springfall-usa.vercel.app'
+];
+
+// CORS options with dynamic origin check
 const corsOptions = {
-  origin: ['http://localhost:5173', 'https://springfall-usa.vercel.app'],
+  origin: function (origin, callback) {
+    // allow requests with no origin like Postman or curl
+    if (!origin) return callback(null, true);
+
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization'],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
 };
 
-app.use(cors({
-  origin: '*',  // allows all origins — only use temporarily for testing!
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-}));
-
+// Use CORS middleware with the options
+app.use(cors(corsOptions));
 
 // Middleware setup
 app.use(express.json());
