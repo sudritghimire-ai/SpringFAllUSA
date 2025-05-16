@@ -11,16 +11,19 @@ const port = process.env.PORT || 5000;
 // Logs the MongoDB URL (for debugging)
 console.log('MongoDB URL:', process.env.MONGODB_URL);
 
-// Apply CORS early - MUST BE BEFORE body parsers
-app.use(cors({
+// CORS options
+const corsOptions = {
   origin: ['http://localhost:5173', 'https://springfall-usa.vercel.app'],
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization'],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-}));
+};
 
-// Handle preflight OPTIONS requests
-app.options('*', cors());
+// Apply CORS middleware early for all routes
+app.use(cors(corsOptions));
+
+// Handle preflight OPTIONS requests explicitly
+app.options('*', cors(corsOptions));
 
 // Middleware setup
 app.use(express.json());
