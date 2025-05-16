@@ -19,11 +19,12 @@ const corsOptions = {
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
 };
 
-// Apply CORS middleware early for all routes
-app.use(cors(corsOptions));
+app.use(cors({
+  origin: '*',  // allows all origins — only use temporarily for testing!
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+}));
 
-// Handle preflight OPTIONS requests explicitly
-app.options('*', cors(corsOptions));
 
 // Middleware setup
 app.use(express.json());
