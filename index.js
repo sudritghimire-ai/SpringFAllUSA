@@ -11,19 +11,22 @@ const port = process.env.PORT || 5000;
 // Logs the MongoDB URL (for debugging)
 console.log('MongoDB URL:', process.env.MONGODB_URL);
 
-// Middleware setup
-app.use(express.json());
-app.use(cookieParser());
-app.use(bodyParser.json({ limit: '10mb' }));
-app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
-
-// Apply CORS early
+// Apply CORS early - MUST BE BEFORE body parsers
 app.use(cors({
   origin: ['http://localhost:5173', 'https://springfall-usa.vercel.app'],
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization'],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
 }));
+
+// Handle preflight OPTIONS requests
+app.options('*', cors());
+
+// Middleware setup
+app.use(express.json());
+app.use(cookieParser());
+app.use(bodyParser.json({ limit: '10mb' }));
+app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
 
 // Import routes
 const blogRoutes = require('./src/routes/blog.route');
