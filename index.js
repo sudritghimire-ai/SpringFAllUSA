@@ -13,11 +13,13 @@ const corsOptions = {
   origin: 'https://springfall-usa.vercel.app',
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization'],
-  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],  // Added PATCH here
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],  // PATCH added
 };
 
-
 app.use(cors(corsOptions));
+// Fix CORS preflight for all routes and methods
+app.options('*', cors(corsOptions));
+
 
 // Middleware setup
 app.use(express.json());
